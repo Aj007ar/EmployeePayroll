@@ -1,0 +1,36 @@
+[  
+  {  
+     
+    "name": "Jack",  
+    "department": "sales",  
+    "gender": "male",
+    "salary":100000
+  },  
+  {  
+    "name": "Peter",  
+    "department": "sales",  
+    "gender": "male",
+    "salary":100000
+  },  
+  {  
+     
+    "name": "Mary",  
+    "department": "sales",  
+    "gender": "female",
+    "salary":100000  
+  },  
+  {  
+    
+    "name": "Smith",  
+    "department": "engineering",  
+    "gender": "male",
+    "salary":100000  
+  },  
+  {  
+     
+    "name": "John",  
+    "department": "hr",  
+    "gender": "male",
+    "salary":100000  
+  }  
+]  

@@ -1,0 +1,65 @@
+<div class="logo-content" routerLink="/dashboard">
+    <img src="../../../assets/logo.png" alt="Employee logo">
+    <div class="heading">
+        <span class="emp-text">Employee</span>
+        <span class="emp-payroll">Payroll</span>
+    </div>
+</div>
+<div class="demo-button-container">
+    <button mat-raised-button class="demo-button" routerLink="/addemployee">
+        Add Book
+    </button>
+</div>
+<div class="tbl">
+    <TABLE style="border: none; " BORDER="0 " WIDTH="70% " CELLPADDING="10 " CELLSPACING="0 ">   
+        <TR style="border: 1px solid #DCDCDC;background-color: gainsboro ">
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Sr. No.</H3>
+                <p></p>
+            </TH>
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Name</H3>
+            </TH>
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Gender</H3>
+            </TH>
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Department</H3>
+            </TH>
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Salary</H3>
+            </TH>
+            <!-- <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">StartDate</H3>
+            </TH> -->
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Update</H3>
+            </TH>
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Delete</H3>
+            </TH>
+        </TR>
+
+        <TR *ngFor="let emp of employee">
+            <TH style="color: #333232;opacity: 0.81; " class="counterCell"></TH>
+            <TH style="color: #333232; ">{{emp.name}}</TH>
+            <TH style="color: #333232;opacity: 0.81; ">{{emp.gender}}</TH>
+            <TH style="text-align: start;color: #333232;opacity: 0.81; ">{{emp.department}}</TH>
+            <TH style="text-align: start;color: #333232;opacity: 0.81;">{{emp.salary}}</TH>
+            <!-- <TH style="text-align: start;color: #333232;opacity: 0.81;">{{emp.startDate}}</TH> -->
+            <TH style="text-align: start;color: #333232;opacity: 0.81; ">
+                <div class="update">
+                    <button mat-raised-button color="primary" matTooltip="Update Details">Update</button>
+                </div>
+            </TH>
+            <TH style="text-align: start;color: #333232;opacity: 0.81; ">
+                <div class="Delete">
+                    <button mat-raised-button color="primary" matTooltip="Delete Book">Delete</button>
+                </div>
+            </TH>
+        </TR>
+    </TABLE>
+    <!-- <div class="page">
+        <pagination-controls (pageChange)="page=$event" class="page"></pagination-controls>
+    </div> -->
+</div>
